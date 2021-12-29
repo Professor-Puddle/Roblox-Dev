@@ -14,7 +14,7 @@ local Info = Instance.new("TextLabel")
 
 --Properties:
 
-ScreenGui.Parent = game.CoreGui
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Frame.Parent = ScreenGui
@@ -49,14 +49,14 @@ Info.BorderSizePixel = 0
 Info.Position = UDim2.new(0.0693561658, 0, 0.230615586, 0)
 Info.Size = UDim2.new(0, 152, 0, 72)
 Info.Font = Enum.Font.SourceSans
-Info.Text = "Eclipse Hub will execute itself in 5 seconds, and this GUI will close. Eclipse Hub was made by £thanoj1#3304"
+Info.Text = "Eclipse Hub will execute itself in 5 - 10 seconds. Eclipse Hub was made by £thanoj1#3304"
 Info.TextColor3 = Color3.fromRGB(0, 0, 0)
 Info.TextSize = 14.000
 Info.TextWrapped = true
 
 -- Scripts:
 
-local function CMXUN_fake_script() -- EclipseHub.LocalScript 
+local function NEAJM_fake_script() -- EclipseHub.LocalScript 
 	local script = Instance.new('LocalScript', EclipseHub)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -65,8 +65,8 @@ local function CMXUN_fake_script() -- EclipseHub.LocalScript
 		script.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(CMXUN_fake_script)()
-local function ZVIXJA_fake_script() -- Close.LocalScript 
+coroutine.wrap(NEAJM_fake_script)()
+local function FCEMJG_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -74,15 +74,14 @@ local function ZVIXJA_fake_script() -- Close.LocalScript
 	end)
 		
 end
-coroutine.wrap(ZVIXJA_fake_script)()
-local function KTXSK_fake_script() -- Frame.LocalScript 
+coroutine.wrap(FCEMJG_fake_script)()
+local function XOBJ_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
-	wait(5)
+	wait(math.random(5,10))
 	getgenv().mainKey = "nil"
 	local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https://api.eclipsehub.xyz/auth"c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
-	script.Parent:Destroy()
 end
-coroutine.wrap(KTXSK_fake_script)()
+coroutine.wrap(XOBJ_fake_script)()
