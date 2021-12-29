@@ -56,17 +56,16 @@ Info.TextWrapped = true
 
 -- Scripts:
 
-local function NEAJM_fake_script() -- EclipseHub.LocalScript 
+local function VNSX_fake_script() -- EclipseHub.LocalScript 
 	local script = Instance.new('LocalScript', EclipseHub)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		getgenv().mainKey = "nil"
 		local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https://api.eclipsehub.xyz/auth"c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
-		script.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(NEAJM_fake_script)()
-local function FCEMJG_fake_script() -- Close.LocalScript 
+coroutine.wrap(VNSX_fake_script)()
+local function HHJJ_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -74,8 +73,8 @@ local function FCEMJG_fake_script() -- Close.LocalScript
 	end)
 		
 end
-coroutine.wrap(FCEMJG_fake_script)()
-local function XOBJ_fake_script() -- Frame.LocalScript 
+coroutine.wrap(HHJJ_fake_script)()
+local function GCELK_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	script.Parent.Active = true
@@ -84,4 +83,4 @@ local function XOBJ_fake_script() -- Frame.LocalScript
 	getgenv().mainKey = "nil"
 	local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https://api.eclipsehub.xyz/auth"c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
 end
-coroutine.wrap(XOBJ_fake_script)()
+coroutine.wrap(GCELK_fake_script)()
