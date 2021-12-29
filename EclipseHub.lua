@@ -49,23 +49,24 @@ Info.BorderSizePixel = 0
 Info.Position = UDim2.new(0.0693561658, 0, 0.230615586, 0)
 Info.Size = UDim2.new(0, 152, 0, 72)
 Info.Font = Enum.Font.SourceSans
-Info.Text = "Eclipse Hub will execute itself in 5 - 10 seconds. Eclipse Hub was made by £thanoj1#3304"
+Info.Text = "Eclipse Hub will execute itself in 5 - 10 seconds and this GUI will close. Eclipse Hub was made by £thanoj1#3304"
 Info.TextColor3 = Color3.fromRGB(0, 0, 0)
 Info.TextSize = 14.000
 Info.TextWrapped = true
 
 -- Scripts:
 
-local function VNSX_fake_script() -- EclipseHub.LocalScript 
+local function VGAXGU_fake_script() -- EclipseHub.LocalScript 
 	local script = Instance.new('LocalScript', EclipseHub)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		getgenv().mainKey = "nil"
 		local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https://api.eclipsehub.xyz/auth"c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
+		script.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(VNSX_fake_script)()
-local function HHJJ_fake_script() -- Close.LocalScript 
+coroutine.wrap(VGAXGU_fake_script)()
+local function HTVBIBO_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -73,8 +74,8 @@ local function HHJJ_fake_script() -- Close.LocalScript
 	end)
 		
 end
-coroutine.wrap(HHJJ_fake_script)()
-local function GCELK_fake_script() -- Frame.LocalScript 
+coroutine.wrap(HTVBIBO_fake_script)()
+local function ETRWWT_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	script.Parent.Active = true
@@ -82,5 +83,6 @@ local function GCELK_fake_script() -- Frame.LocalScript
 	wait(math.random(5,10))
 	getgenv().mainKey = "nil"
 	local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https://api.eclipsehub.xyz/auth"c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
+	script.Parent.Parent:Destroy()
 end
-coroutine.wrap(GCELK_fake_script)()
+coroutine.wrap(ETRWWT_fake_script)()
