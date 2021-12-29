@@ -20,12 +20,12 @@ ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame.Position = UDim2.new(0.20923306, 0, 0.592317224, 0)
-Frame.Size = UDim2.new(0, 178, 0, 175)
+Frame.Size = UDim2.new(0, 178, 0, 148)
 
 EclipseHub.Name = "EclipseHub"
 EclipseHub.Parent = Frame
 EclipseHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-EclipseHub.Position = UDim2.new(0.163875967, 0, 0.709825993, 0)
+EclipseHub.Position = UDim2.new(0.169493943, 0, 0.677542925, 0)
 EclipseHub.Size = UDim2.new(0, 117, 0, 31)
 EclipseHub.Font = Enum.Font.SourceSans
 EclipseHub.Text = "Execute Manually"
@@ -46,27 +46,26 @@ Info.Name = "Info"
 Info.Parent = Frame
 Info.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Info.BorderSizePixel = 0
-Info.Position = UDim2.new(0.0693561658, 0, 0.230615586, 0)
-Info.Size = UDim2.new(0, 152, 0, 72)
+Info.Position = UDim2.new(0.0693561658, 0, 0.287424743, 0)
+Info.Size = UDim2.new(0, 152, 0, 45)
 Info.Font = Enum.Font.SourceSans
-Info.Text = "Eclipse Hub will execute itself in 5 - 10 seconds and this GUI will close. Eclipse Hub was made by £thanoj1#3304"
+Info.Text = "Eclipse Hub will execute itself in 5 - 10 seconds. Eclipse Hub was made by £thanoj1#3304"
 Info.TextColor3 = Color3.fromRGB(0, 0, 0)
 Info.TextSize = 14.000
 Info.TextWrapped = true
 
 -- Scripts:
 
-local function VGAXGU_fake_script() -- EclipseHub.LocalScript 
+local function FHBNG_fake_script() -- EclipseHub.LocalScript 
 	local script = Instance.new('LocalScript', EclipseHub)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		getgenv().mainKey = "nil"
 		local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https://api.eclipsehub.xyz/auth"c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
-		script.Parent.Parent.Parent:Destroy()
 	end)
 end
-coroutine.wrap(VGAXGU_fake_script)()
-local function HTVBIBO_fake_script() -- Close.LocalScript 
+coroutine.wrap(FHBNG_fake_script)()
+local function BUKSJ_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -74,8 +73,8 @@ local function HTVBIBO_fake_script() -- Close.LocalScript
 	end)
 		
 end
-coroutine.wrap(HTVBIBO_fake_script)()
-local function ETRWWT_fake_script() -- Frame.LocalScript 
+coroutine.wrap(BUKSJ_fake_script)()
+local function HTMM_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	script.Parent.Active = true
@@ -83,6 +82,5 @@ local function ETRWWT_fake_script() -- Frame.LocalScript
 	wait(math.random(5,10))
 	getgenv().mainKey = "nil"
 	local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https://api.eclipsehub.xyz/auth"c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
-	script.Parent.Parent:Destroy()
 end
-coroutine.wrap(ETRWWT_fake_script)()
+coroutine.wrap(HTMM_fake_script)()
