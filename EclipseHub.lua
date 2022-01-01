@@ -11,6 +11,12 @@ local Frame = Instance.new("Frame")
 local EclipseHub = Instance.new("TextButton")
 local Close = Instance.new("TextButton")
 local Info = Instance.new("TextLabel")
+local Information = Instance.new("TextButton")
+local Frame_2 = Instance.new("Frame")
+local Info_2 = Instance.new("TextLabel")
+local Info_3 = Instance.new("TextLabel")
+local Info_4 = Instance.new("TextLabel")
+local Info_5 = Instance.new("TextLabel")
 
 --Properties:
 
@@ -54,9 +60,73 @@ Info.TextColor3 = Color3.fromRGB(0, 0, 0)
 Info.TextSize = 14.000
 Info.TextWrapped = true
 
+Information.Name = "Information"
+Information.Parent = Frame
+Information.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Information.Position = UDim2.new(0.628055394, 0, -0.00134727359, 0)
+Information.Size = UDim2.new(0, 33, 0, 30)
+Information.Font = Enum.Font.SourceSans
+Information.Text = "I"
+Information.TextColor3 = Color3.fromRGB(0, 0, 0)
+Information.TextSize = 14.000
+
+Frame_2.Parent = Information
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.Position = UDim2.new(1.99999905, 0, 0, 0)
+Frame_2.Size = UDim2.new(0, 329, 0, 148)
+Frame_2.Visible = false
+
+Info_2.Name = "Info"
+Info_2.Parent = Frame_2
+Info_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Info_2.BorderSizePixel = 0
+Info_2.Position = UDim2.new(0.0571981035, 0, 0.0540540516, 0)
+Info_2.Size = UDim2.new(0, 291, 0, 34)
+Info_2.Font = Enum.Font.SourceSans
+Info_2.Text = "Please note that this is just a temporary thing for people who cannot load the eclipse hub properly."
+Info_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Info_2.TextSize = 14.000
+Info_2.TextWrapped = true
+
+Info_3.Name = "Info"
+Info_3.Parent = Frame_2
+Info_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Info_3.BorderSizePixel = 0
+Info_3.Position = UDim2.new(0.0268029682, 0, 0.273911357, 0)
+Info_3.Size = UDim2.new(0, 310, 0, 29)
+Info_3.Font = Enum.Font.SourceSans
+Info_3.Text = "Universal Chat, Website Account, Premium Perks, Audios and Trading probably won't work"
+Info_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Info_3.TextSize = 14.000
+Info_3.TextWrapped = true
+
+Info_4.Name = "Info"
+Info_4.Parent = Frame_2
+Info_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Info_4.BorderSizePixel = 0
+Info_4.Position = UDim2.new(0.0268029682, 0, 0.469857275, 0)
+Info_4.Size = UDim2.new(0, 310, 0, 31)
+Info_4.Font = Enum.Font.SourceSans
+Info_4.Text = "If the game script doesn't load, press the X button on the Eclipse Hub and Press \"Execute Manually\" and Re execute."
+Info_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+Info_4.TextSize = 14.000
+Info_4.TextWrapped = true
+
+Info_5.Name = "Info"
+Info_5.Parent = Frame_2
+Info_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Info_5.BorderSizePixel = 0
+Info_5.Position = UDim2.new(0.0268029682, 0, 0.679316759, 0)
+Info_5.Size = UDim2.new(0, 310, 0, 47)
+Info_5.Font = Enum.Font.SourceSans
+Info_5.Text = "I reccomend putting this GUI's loadstring into JJsploit's autoexecute folder, so from the moment you inject you can load the script"
+Info_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+Info_5.TextSize = 14.000
+Info_5.TextWrapped = true
+
 -- Scripts:
 
-local function FHBNG_fake_script() -- EclipseHub.LocalScript 
+local function OVJGIEI_fake_script() -- EclipseHub.LocalScript 
 	local script = Instance.new('LocalScript', EclipseHub)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -64,8 +134,8 @@ local function FHBNG_fake_script() -- EclipseHub.LocalScript
 		local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https://api.eclipsehub.xyz/auth"c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
 	end)
 end
-coroutine.wrap(FHBNG_fake_script)()
-local function BUKSJ_fake_script() -- Close.LocalScript 
+coroutine.wrap(OVJGIEI_fake_script)()
+local function XUTP_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -73,14 +143,30 @@ local function BUKSJ_fake_script() -- Close.LocalScript
 	end)
 		
 end
-coroutine.wrap(BUKSJ_fake_script)()
-local function HTMM_fake_script() -- Frame.LocalScript 
+coroutine.wrap(XUTP_fake_script)()
+local function HMLA_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	script.Parent.Active = true
 	script.Parent.Draggable = true
+	script.Parent.Information.Frame.Active = true
+	script.Parent.Information.Frame.Visible = false
+	--script.Parent.Information.Frame.Draggable = true
 	wait(math.random(5,10))
 	getgenv().mainKey = "nil"
 	local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https://api.eclipsehub.xyz/auth"c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
 end
-coroutine.wrap(HTMM_fake_script)()
+coroutine.wrap(HMLA_fake_script)()
+local function MGPMSPM_fake_script() -- Information.LocalScript 
+	local script = Instance.new('LocalScript', Information)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Frame.Visible == true then
+			script.Parent.Frame.Visible = false
+		else
+			script.Parent.Frame.Visible = true
+		end
+	end)
+		
+end
+coroutine.wrap(MGPMSPM_fake_script)()
