@@ -23,6 +23,10 @@ local Info_2 = Instance.new("TextLabel")
 local Info_3 = Instance.new("TextLabel")
 local Info_4 = Instance.new("TextLabel")
 local Info_5 = Instance.new("TextLabel")
+local Proof = Instance.new("TextButton")
+local Frame_3 = Instance.new("Frame")
+local Info_6 = Instance.new("TextLabel")
+local WatchProof = Instance.new("TextButton")
 
 --Properties:
 
@@ -130,9 +134,47 @@ Info_5.TextColor3 = Color3.fromRGB(0, 0, 0)
 Info_5.TextSize = 14.000
 Info_5.TextWrapped = true
 
+Proof.Name = "Proof"
+Proof.Parent = Frame
+Proof.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Proof.Position = UDim2.new(0.44266212, 0, -0.00134727359, 0)
+Proof.Size = UDim2.new(0, 33, 0, 30)
+Proof.Font = Enum.Font.SourceSans
+Proof.Text = "P"
+Proof.TextColor3 = Color3.fromRGB(0, 0, 0)
+Proof.TextSize = 14.000
+
+Frame_3.Parent = Proof
+Frame_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_3.Position = UDim2.new(2.99999905, 0, 0, 0)
+Frame_3.Size = UDim2.new(0, 178, 0, 148)
+Frame_3.Visible = false
+
+Info_6.Name = "Info"
+Info_6.Parent = Frame_3
+Info_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Info_6.BorderSizePixel = 0
+Info_6.Position = UDim2.new(0.0511190742, 0, 0.155405402, 0)
+Info_6.Size = UDim2.new(0, 157, 0, 64)
+Info_6.Font = Enum.Font.SourceSans
+Info_6.Text = "This GUI and Eclipse Hub both work with JJsploit, and any other custom exploit that also uses WeAreDevs's API."
+Info_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+Info_6.TextSize = 14.000
+Info_6.TextWrapped = true
+
+WatchProof.Name = "WatchProof"
+WatchProof.Parent = Frame_3
+WatchProof.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WatchProof.Position = UDim2.new(0.166727662, 0, 0.677542925, 0)
+WatchProof.Size = UDim2.new(0, 117, 0, 31)
+WatchProof.Font = Enum.Font.SourceSans
+WatchProof.Text = "View Proof"
+WatchProof.TextColor3 = Color3.fromRGB(0, 0, 0)
+WatchProof.TextSize = 14.000
+
 -- Scripts:
 
-local function NDGFUZC_fake_script() -- EclipseHub.LocalScript 
+local function CPZISHD_fake_script() -- EclipseHub.LocalScript 
 	local script = Instance.new('LocalScript', EclipseHub)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -140,8 +182,8 @@ local function NDGFUZC_fake_script() -- EclipseHub.LocalScript
 		local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https://api.eclipsehub.xyz/auth"c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
 	end)
 end
-coroutine.wrap(NDGFUZC_fake_script)()
-local function RHWBIMO_fake_script() -- Close.LocalScript 
+coroutine.wrap(CPZISHD_fake_script)()
+local function BJEOR_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -149,8 +191,8 @@ local function RHWBIMO_fake_script() -- Close.LocalScript
 	end)
 		
 end
-coroutine.wrap(RHWBIMO_fake_script)()
-local function HWEQC_fake_script() -- Frame.LocalScript 
+coroutine.wrap(BJEOR_fake_script)()
+local function PIWUXB_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	script.Parent.Active = true
@@ -164,8 +206,8 @@ local function HWEQC_fake_script() -- Frame.LocalScript
 	getgenv().mainKey = "nil"
 	local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https://api.eclipsehub.xyz/auth"c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
 end
-coroutine.wrap(HWEQC_fake_script)()
-local function RSFGCQF_fake_script() -- Information.LocalScript 
+coroutine.wrap(PIWUXB_fake_script)()
+local function PIZKCG_fake_script() -- Information.LocalScript 
 	local script = Instance.new('LocalScript', Information)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -177,4 +219,30 @@ local function RSFGCQF_fake_script() -- Information.LocalScript
 	end)
 		
 end
-coroutine.wrap(RSFGCQF_fake_script)()
+coroutine.wrap(PIZKCG_fake_script)()
+local function STIYNBQ_fake_script() -- Proof.LocalScript 
+	local script = Instance.new('LocalScript', Proof)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		if script.Parent.Frame.Visible == true then
+			script.Parent.Frame.Visible = false
+		else
+			script.Parent.Frame.Visible = true
+		end
+	end)
+		
+end
+coroutine.wrap(STIYNBQ_fake_script)()
+local function ETFAJ_fake_script() -- WatchProof.LocalScript 
+	local script = Instance.new('LocalScript', WatchProof)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		setclipboard("https://cdn.discordapp.com/attachments/707926636187877386/927149859839029258/2021-12-28_23-47-50.mp4")
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "Proof";
+			Text = "Video Link Copied";
+			Duration = "10";
+		})
+	end)
+end
+coroutine.wrap(ETFAJ_fake_script)()
