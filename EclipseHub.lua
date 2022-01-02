@@ -4,7 +4,7 @@
 -- Please note that this GUI was only made to load the Eclipse Hub faster.
 -- However the website account, premium perks, universal chat, trading and audios might not work.
 -- Game script and Universal Script does load (Atleast in Murder Mystery 2)
--- This works with JJsploit as well, include any custom exploit that uses WeAreDev's API
+-- This works with JJsploit as well, include any custom exploit that uses WeAreDevs's API
 -- Proof - https://bit.ly/3EQqhZ0
 
 -- Gui to Lua
