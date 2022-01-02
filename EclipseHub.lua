@@ -55,7 +55,7 @@ Info.BorderSizePixel = 0
 Info.Position = UDim2.new(0.0693561658, 0, 0.287424743, 0)
 Info.Size = UDim2.new(0, 152, 0, 45)
 Info.Font = Enum.Font.SourceSans
-Info.Text = "Eclipse Hub will execute itself in 5 - 10 seconds. Eclipse Hub was made by £thanoj1#3304"
+Info.Text = "Eclipse Hub will execute itself in seconds. Eclipse Hub was made by £thanoj1#3304"
 Info.TextColor3 = Color3.fromRGB(0, 0, 0)
 Info.TextSize = 14.000
 Info.TextWrapped = true
@@ -126,7 +126,7 @@ Info_5.TextWrapped = true
 
 -- Scripts:
 
-local function OVJGIEI_fake_script() -- EclipseHub.LocalScript 
+local function NDGFUZC_fake_script() -- EclipseHub.LocalScript 
 	local script = Instance.new('LocalScript', EclipseHub)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -134,8 +134,8 @@ local function OVJGIEI_fake_script() -- EclipseHub.LocalScript
 		local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https://api.eclipsehub.xyz/auth"c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
 	end)
 end
-coroutine.wrap(OVJGIEI_fake_script)()
-local function XUTP_fake_script() -- Close.LocalScript 
+coroutine.wrap(NDGFUZC_fake_script)()
+local function RHWBIMO_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -143,8 +143,8 @@ local function XUTP_fake_script() -- Close.LocalScript
 	end)
 		
 end
-coroutine.wrap(XUTP_fake_script)()
-local function HMLA_fake_script() -- Frame.LocalScript 
+coroutine.wrap(RHWBIMO_fake_script)()
+local function HWEQC_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	script.Parent.Active = true
@@ -152,12 +152,14 @@ local function HMLA_fake_script() -- Frame.LocalScript
 	script.Parent.Information.Frame.Active = true
 	script.Parent.Information.Frame.Visible = false
 	--script.Parent.Information.Frame.Draggable = true
-	wait(math.random(5,10))
+	local waittime = math.random(5,10)
+	script.Parent.Info.Text = "Eclipse Hub will execute itself in "..waittime.." seconds. Eclipse Hub was made by £thanoj1#3304"
+	wait(waittime)
 	getgenv().mainKey = "nil"
 	local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https://api.eclipsehub.xyz/auth"c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
 end
-coroutine.wrap(HMLA_fake_script)()
-local function MGPMSPM_fake_script() -- Information.LocalScript 
+coroutine.wrap(HWEQC_fake_script)()
+local function RSFGCQF_fake_script() -- Information.LocalScript 
 	local script = Instance.new('LocalScript', Information)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -169,4 +171,4 @@ local function MGPMSPM_fake_script() -- Information.LocalScript
 	end)
 		
 end
-coroutine.wrap(MGPMSPM_fake_script)()
+coroutine.wrap(RSFGCQF_fake_script)()
