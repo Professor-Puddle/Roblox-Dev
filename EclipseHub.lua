@@ -174,7 +174,7 @@ WatchProof.TextSize = 14.000
 
 -- Scripts:
 
-local function YOIRAET_fake_script() -- EclipseHub.LocalScript 
+local function RAZD_fake_script() -- EclipseHub.LocalScript 
 	local script = Instance.new('LocalScript', EclipseHub)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -182,8 +182,8 @@ local function YOIRAET_fake_script() -- EclipseHub.LocalScript
 		local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https://api.eclipsehub.xyz/auth"c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
 	end)
 end
-coroutine.wrap(YOIRAET_fake_script)()
-local function DTMFGSR_fake_script() -- Close.LocalScript 
+coroutine.wrap(RAZD_fake_script)()
+local function EGHS_fake_script() -- Close.LocalScript 
 	local script = Instance.new('LocalScript', Close)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -191,8 +191,8 @@ local function DTMFGSR_fake_script() -- Close.LocalScript
 	end)
 		
 end
-coroutine.wrap(DTMFGSR_fake_script)()
-local function JHEIP_fake_script() -- Frame.LocalScript 
+coroutine.wrap(EGHS_fake_script)()
+local function XPHPZKY_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	script.Parent.Active = true
@@ -206,34 +206,46 @@ local function JHEIP_fake_script() -- Frame.LocalScript
 	getgenv().mainKey = "nil"
 	local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https://api.eclipsehub.xyz/auth"c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
 end
-coroutine.wrap(JHEIP_fake_script)()
-local function GGZA_fake_script() -- Information.LocalScript 
+coroutine.wrap(XPHPZKY_fake_script)()
+local function CCQZMTU_fake_script() -- Information.LocalScript 
 	local script = Instance.new('LocalScript', Information)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		if script.Parent.Frame.Visible == true then
+			if script.Parent.Parent.Proof.Frame.Visible == true then
+				script.Parent.Parent.Proof.Frame.Visible = false
+			end
 			script.Parent.Frame.Visible = false
 		else
+			if script.Parent.Parent.Proof.Frame.Visible == true then
+				script.Parent.Parent.Proof.Frame.Visible = false
+			end
 			script.Parent.Frame.Visible = true
 		end
 	end)
 		
 end
-coroutine.wrap(GGZA_fake_script)()
-local function VFAGP_fake_script() -- Proof.LocalScript 
+coroutine.wrap(CCQZMTU_fake_script)()
+local function FWUI_fake_script() -- Proof.LocalScript 
 	local script = Instance.new('LocalScript', Proof)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		if script.Parent.Frame.Visible == true then
+			if script.Parent.Parent.Information.Frame.Visible == true then
+				script.Parent.Parent.Information.Frame.Visible = false
+			end
 			script.Parent.Frame.Visible = false
 		else
+			if script.Parent.Parent.Information.Frame.Visible == true then
+				script.Parent.Parent.Information.Frame.Visible = false
+			end
 			script.Parent.Frame.Visible = true
 		end
 	end)
 		
 end
-coroutine.wrap(VFAGP_fake_script)()
-local function XHOMBXX_fake_script() -- WatchProof.LocalScript 
+coroutine.wrap(FWUI_fake_script)()
+local function YAZRY_fake_script() -- WatchProof.LocalScript 
 	local script = Instance.new('LocalScript', WatchProof)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -245,4 +257,4 @@ local function XHOMBXX_fake_script() -- WatchProof.LocalScript
 		})
 	end)
 end
-coroutine.wrap(XHOMBXX_fake_script)()
+coroutine.wrap(YAZRY_fake_script)()
