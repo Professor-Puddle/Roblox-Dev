@@ -11,8 +11,6 @@ loadstring(game:HttpGet('https://pastebin.com/raw/wrzLbYCu'))()
 
 ## Supported Executors
 -[Krnl](https://krnl.ca)<br>
--[JJsploit](https://wearedevs.net/d/JJSploit)<br>
--Any custom exploit that uses WeAreDev's API<br>
 -Any payed exploits<br><br>
 Other exploits will work too. Try running them on your executor. Some scrips might not work.
 
