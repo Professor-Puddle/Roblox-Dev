@@ -11,7 +11,8 @@ If you don't know how to use my script, [watch this tutorial video.](https://www
 loadstring(game:HttpGet('https://pastebin.com/raw/wrzLbYCu'))()
 ```
 
-![image](https://user-images.githubusercontent.com/78994826/152198442-1c16dd3e-7062-4ad6-9c1d-7ab6e524b4b0.png)
+![Screenshot (20)](https://user-images.githubusercontent.com/78994826/152201061-cdd58119-0da8-4b6b-ad7c-ebb003015c06.png)
+
 
 ## What's New:
 ```
