@@ -16,7 +16,7 @@ loadstring(game:HttpGet('https://pastebin.com/raw/wrzLbYCu'))()
 
 ## What's New:
 ```
-+] Bug fixes
+[+] Bug fixes
 [+] Refactored code
 [+] Added better script detection
 [+] Added "Please Wait..." for heavy scripts
