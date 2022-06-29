@@ -16,12 +16,34 @@ loadstring(game:HttpGet('https://pastebin.com/raw/wrzLbYCu'))()
 
 ## What's New:
 ```
-+ Bug Fixes
-+ Added option to destroy GUI
-+ New Icon added
-+ Made the GUI smaller
-- Removed Noclip as it was broken
-- Removed Teleport as Teleport already exists in eclipse hub
++] Bug fixes
+[+] Refactored code
+[+] Added better script detection
+[+] Added "Please Wait..." for heavy scripts
+[+] Integrated a mechanism to re execute a script
+[+] Integrated a save settings mechanism
+[+] Integrated a manual save settings mechanism
+[+] Integrated saving mechanics to the animation changer
+[+] Added a UI grid layout to the animation changer
+[+] Added a UI list layout to the main GUI
+[+] Added a scrolling frame to the main GUI
+[+] Changed Credits button
+[+] Polished all GUIs
+[+] Updated credits
+[+] Improved the Destroy GUI button
+[+] Added welcome and goodbye messages
+[+] Improved game detection
+[+] Added a Rejoin button
+[+] Added MP elite script
+[+] Added Eclipse Hub Premium
+[+] Added method to save Eclipse Hub Premium key
+[+] Added Vynixu's MM2 Script
+[+] Added MM2 Admin Panel Script
+[+] Added Blue MM2 GUI Script
+[+] Added MM2 Haxx Remastered Script
+[+] Created a script for Millionaire Empire Tycoon
+[+] Created a script for Mall Tycoon
+[+] Shortened file size
 ```
 ## Supported Executors
 -[Krnl](https://krnl.ca)<br>
